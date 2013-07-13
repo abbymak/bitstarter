@@ -6,7 +6,7 @@ var fs = require('fs'),
     util = require('util');
 
 app.get('/', function(request, response) {
-  response.send('Hello World3!');
+//  response.send('Hello World3!');
 
 response.writeHead(404, {'content-type': 'text/html'});
         var rs = fs.createReadStream('index.html');
