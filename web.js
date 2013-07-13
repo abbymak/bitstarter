@@ -4,6 +4,7 @@ var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
   response.send('Hello World3!');
+  response.redirect('~/index.html');
 });
 
 var port = process.env.PORT || 5000;
